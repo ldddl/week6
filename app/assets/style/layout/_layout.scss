@@ -1,0 +1,146 @@
+
+ .header{
+    border: 1px solid #707070;
+    // background: pink;
+    @include pad{
+      // background: pink;
+      background: green;
+      }
+      @include pc{
+        background: #fff;
+        }       
+    h1{
+      padding: 21px 49px 17px 90px;
+      font-size: 22px;
+      color: #630834;
+      @include pc {
+      padding: 28px 272px 28px 462px;
+      }
+    }
+    img{
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .sign-list{
+    display: none;
+    @include pc{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .sign-items{
+    a{
+      color: #707070;
+    }
+    @include pc{
+      margin-right: 32px;
+      padding-top: 30px;
+    }
+  }
+  .header-container{
+    display: flex;
+    align-items: center;
+    @include pad{
+      display: flex;
+      justify-content: center;
+    }
+    @include pc{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .subscribe{
+    background: url(https://images.unsplash.com/photo-1536768767433-cc552f38def9?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MzJ8NjIyNDgyMjB8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    h1{
+          color: #fff;
+          padding-top: 222px;
+          width: 240px;
+          font-size: 24px;
+          white-space:wrap;
+          margin-bottom: 22px;
+          @include pc{
+            font-size: 32px;
+            margin-bottom: 12px;
+            padding: 208px 0 0 85px;
+            width: 380px;
+
+          }
+      }
+    &-form{
+        width: 347px;
+        height: 50px;
+        border: 1px solid #EFEFEF;
+        display: flex;
+        border-radius:4px;
+        @include pc{
+            width: 354px;
+            margin-left: 85px;
+        }
+      }
+    &-mail{
+        width: 214px;
+        font-size: 16px;
+        height: 48px;
+        padding: 11px 70px 13px 12px;
+        @include pc{
+            width: 216px;
+            padding: 12px 74px 12px 12px;
+        }
+    }
+    &-submit{
+        color: white;
+        background: #E31277;
+        width: 135px;
+        font-size: 16px;
+        @include pc{
+            width: 136px;
+            padding: 12px 52px;
+        }
+    }
+  }
+  .exhibition-footer{
+    h1{
+      margin-top: 16px;
+      font-size: 22px;
+      @include pc{
+          font-size: 24px;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-right: 16px;
+        }
+    }
+    p{
+        margin-bottom: 16px;
+        font-size: 16px;
+        @include pc{
+            margin-bottom: 0;
+        }
+    }
+  }
+  .exhibition-container{
+    @include pc{
+        padding: 28px 0 28px 85px;
+        display: flex;
+        align-items: center;
+    }
+
+  }
+
+  .sign-list-footer{
+    display: none;
+      @include pc{
+          display: flex;
+          margin-bottom: 0;
+          margin-left: 552px;
+          a{
+              color: #707070;
+          }
+          .sign-footer-items{
+            margin-left: 24px;
+          }
+      }
+  }
