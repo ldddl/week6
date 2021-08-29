@@ -265,6 +265,8 @@ $spacers: (
   6: $spacer * 2, //32px
   7: $spacer * 2.5, //40px
   8: $spacer * 3.75, //60px
+  9: $spacer * 1.25, //20px
+  10: $spacer * 2.25, //36px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -1091,11 +1093,12 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 // Cards
 
 // scss-docs-start card-variables
+// 自訂
 $card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0;//$spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-width:                 0;//$border-width !default;
+$card-border-radius:                0;//$border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;

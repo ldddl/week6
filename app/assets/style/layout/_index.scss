@@ -37,3 +37,22 @@
     overflow-x:auto;
     white-space: nowrap;
 }
+//
+.popular{
+    img{
+        height: 345px;
+        object-fit: cover;
+    }
+}
+.popular-month{
+    // width: 127px;
+    @include pc{
+        width: 39px;
+        padding-bottom: 90px;
+    }
+}
+.popular-introduce{
+    @include pc{
+        width: 540px;
+    }
+}
