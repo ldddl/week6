@@ -1,0 +1,15 @@
+.design-block-img{
+    width: 100%;
+    height: 221px;
+    object-fit: cover;
+}
+.design-block-month{
+    @include pc{
+        width: 60px;
+    }
+}
+.design-block-month1{
+    @include pc{
+        writing-mode: vertical-lr;
+    }
+}

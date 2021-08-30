@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style/all.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
 
-  <body>
-<div class="header">
-  <div class="container header-container">
-    <h1>EXHIBINECTION</h1>
-    <ul class="sign-list list-unstyled">
-      <li class="sign-items"> <a href="#"><p>Sign in</p></a></li>
-      <li class="sign-items"> <a href="#"><p>Sign up</p></a></li>
-    </ul>
-    <img src="https://fakeimg.pl/24x24/" alt="24x24.png">
+<body>
+  <div class="header">
+    <div class="container header-container">
+      <h1>EXHIBINECTION</h1>
+      <ul class="sign-list list-unstyled">
+        <li class="sign-items"> <a href="#">
+            <p>Sign in</p>
+          </a></li>
+        <li class="sign-items"> <a href="#">
+            <p>Sign up</p>
+          </a></li>
+      </ul>
+      <span class="material-icons">confirmation_number</span>
+    </div>
   </div>
-</div>
-    <%- contents %>
-    <div class="footer">
-      <div class="subscribe">
-        <div class="container">
-            <h1>想收到最新消息嗎？ 快訂閱我們！</h1>
-            <div class="subscribe-form">
-              <input class="subscribe-mail" type="email"   placeholder="輸入您的電子信箱">
-              <input class="subscribe-submit" type="submit" value="訂閱">
-            </div>
-        </div>
-      </div>
-      <div class="exhibition-footer">
-        <div class="container exhibition-container">
-          <h1>EXHIBINECTION</h1>
-          <p>© 2020. All Rights Reserved.</p>
-          <ul class="sign-list-footer list-unstyled">
-            <li class="sign-footer-items"> <a href="#"><p>Sign in</p></a></li>
-            <li class="sign-footer-items"> <a href="#"><p>Sign up</p></a></li>
-          </ul>
+  <%- contents %>
+  <div class="footer">
+    <div class="subscribe">
+      <div class="container">
+        <h1>想收到最新消息嗎？ 快訂閱我們！</h1>
+        <div class="subscribe-form">
+          <input class="subscribe-mail" type="email" placeholder="輸入您的電子信箱">
+          <input class="subscribe-submit" type="submit" value="訂閱">
         </div>
       </div>
     </div>
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+    <div class="exhibition-footer">
+      <div class="container exhibition-container">
+        <h1>EXHIBINECTION</h1>
+        <p>© 2020. All Rights Reserved.</p>
+        <ul class="sign-list-footer list-unstyled">
+          <li class="sign-footer-items"> <a href="#">
+              <p>Sign in</p>
+            </a></li>
+          <li class="sign-footer-items"> <a href="#">
+              <p>Sign up</p>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
 </html>
