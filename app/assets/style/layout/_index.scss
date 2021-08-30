@@ -23,6 +23,7 @@
         height: 44px;
     }
 }
+
 //nav
 .nav-scroller {
     height: 2.75rem; /* 隱藏下方捲軸 */
@@ -37,22 +38,43 @@
     overflow-x:auto;
     white-space: nowrap;
 }
-//
+
+//熱門特展
 .popular{
     img{
         height: 345px;
         object-fit: cover;
     }
-}
-.popular-month{
-    // width: 127px;
-    @include pc{
-        width: 39px;
-        padding-bottom: 90px;
+    &-month{
+        // width: 127px;
+        @include pc{
+            width: 39px;
+            padding-bottom: 90px;
+        }
+    }
+    &-introduce{
+        @include pc{
+            width: 540px;
+        }
     }
 }
-.popular-introduce{
-    @include pc{
-        width: 540px;
+
+//直播回顧
+.live-review{
+    object-fit: cover;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true);
+    background-size: cover;
+    &-people{
+        width: 128px;
+        height: 128px;
+    }
+    &-button{
+        width: 140px;
+        height: 40px;
+    }
+    &-background{
+        background-color: rgba(34, 33, 34, 0.8); 
+        background-blend-mode: multiply;
     }
 }
+
